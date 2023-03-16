@@ -2,15 +2,21 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Site Szu Peng Judy Sun</title>
     <link href="img/Favicon.png" rel="shortcut icon">
     <meta name="author" content="Szu Peng Judy Sun">
     <meta name="descriptions" content="Portfolio website - about me">
-</head><body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arapey&family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css-master/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
 <header>
     <div>
-        <a href="index.html"><img src="logo.svg" alt="Szu Peng Judy Sun"></a>
-        <nav><ul>
+        <a href="index.html"><img src="logo.svg" alt="Szu Peng Judy Sun" class="logo" id="logo"></a>
+        <nav><ul id="nav">
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -18,23 +24,25 @@
         </nav>
     </div>
 </header>
-<main>
-    <div>
+    <div id="about">
         <div>
-            <h1>About</h1>
+            <h2>About</h2>
             <picture>
-                <source srcset="img/about_picture" media="(max-width:767px)">
-                <img src="img/about_picture@1x.jpg" alt="My Picture">
+                <source srcset="img/about_picture@1x.jpg" media="(min-width:465px)">
+                <img src="img/about_picture@1x.jpg" alt="My Picture" style="width:auto">
             </picture>
+        </div>
+    </div>
+    <main id="my-story">
             <div>
                 <div>
                     <h2>My Story</h2>
                     <p>Hi there! My name is Szu Peng Sun, but I go by Judy. I’m a UX/UI Designer with a strong hospitality and retail background. I studied Hotel &amp; Lodging Management in college and worked at various hotels, restaurants, cafes, and now in retail. I stumbled upon UX/UI design when I was researching for a new career that challenges me more creatively. I’ve always been into music and the arts since I was young and been told I have a good artistic eye. I actually went to a performing arts high school in New York City (the fame school), I was a Vocal major. Which means, I love to sing! Besides singing, I enjoy hiking, traveling, photography, and cuddling with my cat. <br> I’ve worked on various UX/UI projects at CareerFoundry, and also currently learning Frontend Development for Designers (HTML, CSS, Javascript). Because of my strong hospitality and retail background, I easily empathize with people. I can also identify customer needs and quickly resolve them efficiently. This ties in to creating user-centric designs for UX/UI design. My goal is to make a positive impact on people’s lives while creating beautiful designs.
                     </p>
-                    <a href="files/SunSzuPengJudy_Resume.pdf" target="_blank">View my Resume</a>
+                    <a href="files/SunSzuPengJudy_Resume.pdf" target="_blank" class="button">View my Resume</a>
                     <h2>Skills &amp; Tools</h2>
                     <h3>Relevant Skills</h3>
-                    <ul>
+                    <ul id="skills">
                         <li>UX Research</li>
                         <li>Wireframing</li>
                         <li>Prototyping</li>
@@ -51,7 +59,7 @@
                         <li>Javascript</li>
                     </ul>
                     <h3>Tools</h3>
-                    <ul>
+                    <ul id="tools">
                         <li>Figma</li>
                         <li>Balsamiq</li>
                         <li>UsabilityHub</li>
@@ -61,8 +69,6 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </div>
 
 </main>
 <footer id="contact">
@@ -70,10 +76,10 @@
         <h2>Get in Touch</h2>
         <p>If you like my work, feel free to connect with me via email, LinkedIn, Behance or Dribbble.</p>
         <div>
-            <a href="mailto:szupengjudysun@gmail.com">Send Email</a>
+            <a href="mailto:szupengjudysun@gmail.com" class="button contact">Send Email</a>
         </div>
         <div>
-            <ul>
+            <ul class="social-media" id="social-media">
                 <li><a href="https://www.linkedin.com/in/szupengjudysun/" target="_blank">
                     <img src="img/footer_icon_linkedin.svg" alt="LinkedIn">
                 </a></li>
@@ -85,7 +91,7 @@
                 </a></li>
             </ul>
         </div>
-        <p>Copyright Szu Peng Judy Sun 2023</p>
+        <p id="copyright">Copyright Szu Peng Judy Sun 2023</p>
     </div>
 </footer>
 </body>
