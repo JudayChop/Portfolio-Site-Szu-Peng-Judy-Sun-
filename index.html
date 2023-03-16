@@ -2,15 +2,23 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Site Szu Peng Judy Sun</title>
     <link href="img/Favicon.png" rel="shortcut icon">
     <meta name="author" content="Szu Peng Judy Sun">
     <meta name="descriptions" content="Portfolio website - homepage">
-</head><body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arapey&family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css-master/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
 <header>
     <div>
-        <a href="index.html"><img src="logo.svg" alt="Szu Peng Judy Sun"></a>
-        <nav><ul>
+        <a href="index.html"><img src="logo.svg" alt="Szu Peng Judy Sun" class="logo" id="logo"></a>
+        <nav><ul id="nav">
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -18,49 +26,49 @@
         </nav>
     </div>
 </header>
-<main>
-    <div>
+    <div class="intro" id="introduction">
         <div>
-            <h1>Hello, I'm Szu Peng Judy Sun.<span>UX/UI Designer</span></h1>
-            <p>with a strong background in hospitality and retail industries, specializes in user-centric designs.</p>
+            <h2>Hello, I'm Szu Peng Judy Sun.</h2><h1><span>UX/UI Designer</span></h1>
+            <p class="intro">with a strong background in hospitality and retail industries, specializes in user-centric designs.</p>
         </div>
     </div>
+<main id="projects">
     <div>
         <div>
             <h2>My Work</h2>
             <div>
                 <div>
                     <picture>
-                        <source srcset="img/project_recycle" media="(max-width:767px)">
-                        <img src="img/recycle/project_recycle@2x.png" alt="My Project reCYCLE">
+                        <source srcset="img/recycle/project_recycle@2x.png" media="(min-width:465px)">
+                        <img src="img/recycle/project_recycle@1x.png" alt="My Project reCYCLE" style="width:auto">
                     </picture>
                 </div>
             </div>
             <h3>reCYCLE</h3>
             <p>reCYCLE is an e-commerce mobile app and responsive web app that aims to create a hassle-free online shopping experience for cyclists as well as a bike friendly community.</p>
-            <a href="recycle.html" >View Project</a>
+            <a href="recycle.html" class="button" >View Project</a>
             <div>
                 <div>
                     <picture>
-                        <source srcset="img/project_noods" media="(max-width:767px)">
-                        <img src="img/noods/project_noods@2x.jpg" alt="My Project noods">
+                        <source srcset="img/noods/project_noods@2x.jpg" media="(min-width:465px)">
+                        <img src="img/noods/project_noods@1x.jpg" alt="My Project noods" style="width:auto">
                     </picture>
                 </div>
             </div>
             <h3>noods</h3>
             <p>noods is a recipe responsive web app that offers authentic Asian recipes for home cooks that enjoy Asian cuisines. noods provides easy-to-follow Asian recipes that actually tastes like the real thing.</p>
-            <a href="">View Project</a>
+            <a href="" class="button" >View Project</a>
             <div>
                 <div>
                     <picture>
-                        <source srcset="img/project_wander" media="(max-width:767px)">
-                        <img src="img/wander/project_wander@2x.png" alt="My Project Wander">
+                        <source srcset="img/wander/project_wander@2x.png" media="(min-width:465px)">
+                        <img src="img/wander/project_wander@1x.png" alt="My Project Wander" style="width:auto">
                     </picture>
                 </div>
             </div>
             <h3>Wander</h3>
             <p>Wander is a roadtrip mobile native app available in iOS and Android. It helps roadtrip travelers with trip planning, simplify finding stops along their way based on their preferences.</p>
-            <a href="">View Project</a>
+            <a href="" class="button" >View Project</a>
         </div>
     </div>
 </main>
@@ -69,10 +77,10 @@
         <h2>Get in Touch</h2>
         <p>If you like my work, feel free to connect with me via email, LinkedIn, Behance or Dribbble.</p>
         <div>
-            <a href="mailto:szupengjudysun@gmail.com">Send Email</a>
+            <a href="mailto:szupengjudysun@gmail.com" class="button contact">Send Email</a>
         </div>
         <div>
-        <ul>
+        <ul class="social-media" id="social-media">
             <li><a href="https://www.linkedin.com/in/szupengjudysun/" target="_blank">
                 <img src="img/footer_icon_linkedin.svg" alt="LinkedIn">
             </a></li>
@@ -84,7 +92,7 @@
             </a></li>
         </ul>
         </div>
-        <p>Copyright Szu Peng Judy Sun 2023</p>
+        <p id="copyright">Copyright Szu Peng Judy Sun 2023</p>
     </div>
 </footer>
 </body>
