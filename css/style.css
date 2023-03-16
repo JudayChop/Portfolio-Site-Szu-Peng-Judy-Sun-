@@ -1,0 +1,71 @@
+/*
+Colors used:
+Primary Color (White): #FEFEFE; (Black): #454141; (Blue): #2A5B76;
+Secondary Color (Orange): #EEA589; (Yellow): #EEC689; (Blue): #347194;
+*/
+main {font-family: 'Arapey', serif; 
+    background-color: #2A5B76; 
+    font-size: 20px;
+    color: #FEFEFE; }
+h1, h2, h3 {line-height: 1.4; 
+    font-family: 'Fira Sans', sans-serif}
+h1 {font-size: 2.75em;
+    font-weight: 700;}
+h2 {font-size: 1.30em;
+    font-weight: 700;}
+h3 {font-size: 1em;
+    font-weight: 700;}
+img {max-width: 100%;
+    height:auto}
+.logo {max-width: 54px;
+    max-height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}
+#nav {list-style-type: none;}
+#nav a {text-decoration: none; color:#454141 }
+#nav a:hover, a:focus {text-decoration: underline;}
+#nav a:visited {color:#EEA589}
+#nav a:active {color:#2A5B76}
+header {background-color: #FEFEFE;}
+.intro {background-color: #FEFEFE; 
+    color:#454141; 
+    font-family: 'Fira Sans', sans-serif;}
+p.intro {font-weight: 400; 
+    font-size: 1.30em; 
+    font-family:'Fira Sans', sans-serif}
+#social-media {list-style-type: none;
+    max-width: 34px;
+    max-height: 34px;}
+#contact {background-color: #FEFEFE; color:#454141}
+
+.button {display: inline-block; 
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #EEA589; 
+    color:#454141;
+    text-decoration:none;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 14px 105px;
+    border-radius: 5px;
+    border-right: 2px solid #454141;
+    border-bottom: 6px solid #454141; 
+    transition: 0.2s opacity;}
+.button:hover, .button.contact:hover {opacity: 0.8;
+    text-decoration: none;}
+.button:active, .button.contact:active {background-color: #FEFEFE;
+     color:#EEA589; 
+     border-color: #EEA589;}
+.button.contact {display: inline-block; 
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #EEA589; 
+    color:#454141;
+    text-decoration:none;
+    font-weight: 700;
+    font-size: 20px;
+    padding:14px 20px;
+    border-radius: 5px;
+    border-right: 2px solid #454141;
+    border-bottom: 6px solid #454141; 
+    transition: 0.2s opacity;
+    }
