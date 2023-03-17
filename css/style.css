@@ -27,6 +27,7 @@ img {max-width: 100%;
 #nav a:hover, a:focus {text-decoration: underline;}
 #nav a:visited {color:#EEA589}
 #nav a:active {color:#2A5B76}
+#about {background-color: #FEFEFE;}
 header {background-color: #FEFEFE;}
 .intro {background-color: #FEFEFE; 
     color:#454141; 
