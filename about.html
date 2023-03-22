@@ -12,21 +12,22 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css-master/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-<header id="navigation">
+<body id="about-page">
+<header>
     <div>
-        <a href="index.html"><img src="logo.svg" alt="Szu Peng Judy Sun" class="logo" id="logo"></a>
-        <nav><ul id="nav">
+        <a href="index.html"><img src="img/logo.svg" alt="Szu Peng Judy Sun" class="logo"></a>
+        <nav><ul>
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
-</header><main id="about-me">
+</header>
+<main>
     <div id="about">
-        <div>
-            <h2>About</h2>
+        <div class="container">
+            <h2 class="center">About</h2>
             <picture>
                 <source srcset="img/about_picture@1x.jpg" media="(min-width:465px)">
                 <img src="img/about_picture@1x.jpg" alt="My Picture">
@@ -34,8 +35,8 @@
         </div>
     </div>
             <div>
-                <div>
-                    <h2>My Story</h2>
+                <div class="container">
+                    <h2 class="center" id="title">My Story</h2>
                     <p>Hi there! My name is Szu Peng Sun, but I go by Judy. I’m a UX/UI Designer with a strong hospitality and retail background. I studied Hotel &amp; Lodging Management in college and worked at various hotels, restaurants, cafes, and now in retail. I stumbled upon UX/UI design when I was researching for a new career that challenges me more creatively. I’ve always been into music and the arts since I was young and been told I have a good artistic eye. I actually went to a performing arts high school in New York City (the fame school), I was a Vocal major. Which means, I love to sing! Besides singing, I enjoy hiking, traveling, photography, and cuddling with my cat. <br> I’ve worked on various UX/UI projects at CareerFoundry, and also currently learning Frontend Development for Designers (HTML, CSS, Javascript). Because of my strong hospitality and retail background, I easily empathize with people. I can also identify customer needs and quickly resolve them efficiently. This ties in to creating user-centric designs for UX/UI design. My goal is to make a positive impact on people’s lives while creating beautiful designs.
                     </p>
                     <a href="files/SunSzuPengJudy_Resume.pdf" target="_blank" class="button">View my Resume</a>
@@ -71,14 +72,14 @@
 
 </main>
 <footer id="contact">
-    <div>
-        <h2>Get in Touch</h2>
+    <div class="container">
+        <h1>Get in Touch</h1>
         <p>If you like my work, feel free to connect with me via email, LinkedIn, Behance or Dribbble.</p>
         <div>
             <a href="mailto:szupengjudysun@gmail.com" class="button contact">Send Email</a>
         </div>
-        <div>
-            <ul class="social-media" id="social-media">
+        <div class="social-media">
+            <ul>
                 <li><a href="https://www.linkedin.com/in/szupengjudysun/" target="_blank">
                     <img src="img/footer_icon_linkedin.svg" alt="LinkedIn">
                 </a></li>
@@ -90,7 +91,7 @@
                 </a></li>
             </ul>
         </div>
-        <p id="copyright">Copyright Szu Peng Judy Sun 2023</p>
+        <p>Copyright Szu Peng Judy Sun 2023</p>
     </div>
 </footer>
 </body>
