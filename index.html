@@ -14,11 +14,11 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css-master/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-<header id="navigation">
-    <div>
-        <a href="index.html"><img src="logo.svg" alt="Szu Peng Judy Sun" class="logo" id="logo"></a>
-        <nav><ul id="nav">
+<body id="index-page">
+<header>
+    <div class="container">
+        <a href="index.html"><img src="img/logo.svg" alt="Szu Peng Judy Sun" class="logo"></a>
+        <nav><ul>
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -26,16 +26,17 @@
         </nav>
     </div>
 </header>
-    <div class="intro" id="introduction">
-        <div>
+<main>
+    <div id="hero">
+        <div class="container">
             <h2>Hello, I'm Szu Peng Judy Sun.</h2><h1><span>UX/UI Designer</span></h1>
-            <p class="intro">with a strong background in hospitality and retail industries, specializes in user-centric designs.</p>
+            <p>with a strong background in hospitality and retail industries, specializes in user-centric designs.</p>
         </div>
     </div>
-<main id="projects">
-    <div>
-        <div>
-            <h2>My Work</h2>
+    <div id="work">
+        <div class="container">
+            <h2 class="center" id="title">My Work</h2>
+        <div class="row">
             <div>
                 <div>
                     <picture>
@@ -47,6 +48,8 @@
             <h3>reCYCLE</h3>
             <p>reCYCLE is an e-commerce mobile app and responsive web app that aims to create a hassle-free online shopping experience for cyclists as well as a bike friendly community.</p>
             <a href="recycle.html" class="button" >View Project</a>
+        </div>
+        <div class="row">
             <div>
                 <div>
                     <picture>
@@ -58,6 +61,8 @@
             <h3>noods</h3>
             <p>noods is a recipe responsive web app that offers authentic Asian recipes for home cooks that enjoy Asian cuisines. noods provides easy-to-follow Asian recipes that actually tastes like the real thing.</p>
             <a href="" class="button" >View Project</a>
+        </div>
+        <div class="row">
             <div>
                 <div>
                     <picture>
@@ -70,17 +75,18 @@
             <p>Wander is a roadtrip mobile native app available in iOS and Android. It helps roadtrip travelers with trip planning, simplify finding stops along their way based on their preferences.</p>
             <a href="" class="button" >View Project</a>
         </div>
+        </div>
     </div>
 </main>
 <footer id="contact">
-    <div>
-        <h2>Get in Touch</h2>
+    <div class="container">
+        <h1>Get in Touch</h1>
         <p>If you like my work, feel free to connect with me via email, LinkedIn, Behance or Dribbble.</p>
         <div>
             <a href="mailto:szupengjudysun@gmail.com" class="button contact">Send Email</a>
         </div>
-        <div>
-        <ul class="social-media" id="social-media">
+    <div class="social-media">
+        <ul >
             <li><a href="https://www.linkedin.com/in/szupengjudysun/" target="_blank">
                 <img src="img/footer_icon_linkedin.svg" alt="LinkedIn">
             </a></li>
@@ -91,8 +97,8 @@
                 <img src="img/footer_icon_dribbble.svg" alt="Dribbble"> 
             </a></li>
         </ul>
-        </div>
-        <p id="copyright">Copyright Szu Peng Judy Sun 2023</p>
+    </div>
+        <p>Copyright Szu Peng Judy Sun 2023</p>
     </div>
 </footer>
 </body>
