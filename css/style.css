@@ -13,6 +13,7 @@ main {
 	background-color: #2A5B76;
 	font-size: 20px;
 	color: #FEFEFE;
+    overflow: hidden;
 }
 h1, h2, h3 {
 	line-height: 1.4;
@@ -29,6 +30,10 @@ h2 {
 h3 {
 	font-size: 1em;
 	font-weight: 700;
+    padding-top: 10px;
+}
+p {
+    line-height: 1.5;
 }
 img {
 	max-width: 100%;
@@ -54,6 +59,9 @@ header {
 }
 #about {
 	background-color: #FEFEFE;
+    background-image: url(/img/illustration_about_large.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 #about h2 {
 	color:#454141
@@ -63,9 +71,15 @@ header {
 	color:#454141
 }
 #hero {
-	background-color: #FEFEFE;
+    background-image: url(/img/illustration_home_large.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FEFEFE;
 	color: #454141;
 }
+#hero span {
+    display: block;
+  }
 .button {
 	display: flex;
 	justify-content: center;
@@ -76,9 +90,8 @@ header {
 	font-weight: 700;
 	font-size: 20px;
 	padding: 14px 40px;
-	border-radius: 5px;
-	border-right: 2px solid #454141;
-	border-bottom: 6px solid #454141;
+    border-radius: 5px;
+	box-shadow: 5px 5px 5px #454141;
 	transition: 0.2s opacity;
 	width:100%;
 	margin: auto;
@@ -105,9 +118,14 @@ header {
 	padding:14px 20px;
 	width: 50%;
 	border-radius: 5px;
-	border-right: 2px solid #454141;
-	border-bottom: 6px solid #454141;
+	box-shadow: 5px 5px 5px #454141;
 	transition: 0.2s opacity;
+}
+.underline {
+    text-decoration: underline;
+    text-decoration-color: #EEA589;
+    text-decoration-thickness: 3px;
+    text-underline-position: under;
 }
 /* Layout styling */
 .container {
@@ -122,9 +140,12 @@ header {
 }
 #hero {
 	text-align: left;
-	padding: 20px 0;
+	padding: 70px 0;
 	display: inline-block;
 	width: 100%;
+}
+#about {
+    padding: 20px 0;
 }
 .center {
 	text-align: center;
@@ -174,7 +195,8 @@ nav {
 #about picture {
 	display: flex;
 	justify-content: center;
-	padding: 50px 50px;
+	max-width: 100%;
+    height: auto;
 }
 #title {
 	padding: 15px;
@@ -182,4 +204,75 @@ nav {
 #project-recycle #title {
 	padding-bottom: 20px;
 	padding-top: 10px
+}
+
+
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+      }
+    
+      nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+      }
+      .col-md-6 {
+        width: 50%;
+      }
+      [class*="col-"] {
+        float: left;
+        padding: 10px;
+      }
+      #about-page h3 { 
+        margin-top: 0;}
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+    .button.contact {
+        width: 250px;
+    }
+    .button.resume {
+        width:250px;
+    }
+
+}
+/* Media Queries */     
+@media only screen and (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    #hero h1 {
+        font-size: 3.5em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+    p {
+        font-size: 1.1em;
+    }
+    #hero p {
+        font-size: 1.4em;
+    }
+    #hero {
+        text-align: center;
+    }
+}
+
+/* Animations */  
+
+
+figure {
+    position: absolute;
+    width:100%;
+    overflow: hidden;
+    margin: 0;
 }
