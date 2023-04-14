@@ -26,24 +26,57 @@
     </div>
 </header>
 <main>
-    <div class="container"></div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/top_arrow.png" alt="Top"></button>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
     <div>
         <div>
-            <div class="container">
+            <div class="container" id="project-pic">
             <h2 class="center" id="title">reCYCLE</h2>
             <picture>
                 <source srcset="img/recycle/project_recycle@2x.png" media="(min-width:465px)">
                 <img src="img/recycle/project_recycle@1x.png" alt="My Project reCYCLE" >
             </picture>
             </div>
-        <div class="container">
+            <h2 class="indent">Table of Contents</h2>
+        <div class="sidebar">
+            <a href="#objectivepurpose">Objective/Purpose</a>
+            <a href="#approach">Approach</a>
+            <a href="#myroletools">My Role/ Tools Used</a>
+            <a href="#userflows">User Flows</a>
+            <a href="#lowmidwireframe">Low, Mid-fidelity Wireframes</a>
+            <a href="#userabilitytest">Usability Test</a>
+            <a href="#highwireframe">High-fidelity Wireframes</a>
+            <a href="#finalui">Final UI Design</a>
+            <a href="#responsivedesign">Responsive Design</a>
+            <a href="#challengetakeaways">Challenges and Takeaways</a>
+        </div>
+        <div class="container content">
             <div>
-                <h2 class="underline">Objective</h2>
+                <h2 class="underline" id="objectivepurpose">Objective</h2>
                     <p>reCYCLE is an e-commerce mobile app and responsive web app that aims to create a hassle-free online shopping experience for cyclists to buy and sell used gears. The target audience is between the ages of 20s and 40s, who enjoy cycling as a way of commuting to work, mountain biking in nature, road racing, or simply as a hobby.
                 </p>
                 <h2 class="underline">Purpose</h2>
                     <p>Cycling enthusiasts today usually have to go to major sporting goods stores or other general e-commerce sites to shop and sell their bike gears. Other similar platforms made specifically for used bike gear do exist but the user experience is still lacking. This can cause frustrations because the users would have to go to various places in order to find what they’re looking for. <br>reCYCLE’s simple and sleek design will create a better user experience for cyclists who want to buy or sell used gear online. reCYCLE will also become the go-to platform for their cycling related needs. </p>
-                <h2 class="underline">Approach</h2>
+                <h2 class="underline" id="approach">Approach</h2>
                     <ul>
                     <li><u>User flow</u> - based on user stories </li>
                     <li><u>Wireframes</u> - low, mid, and high-fidelity wireframes</li>
@@ -51,7 +84,7 @@
                     <li><u>Final user interface designs and mockup</u> - gathered user feedback and applied to final design</li>
                 </ul>
                 <div>
-                    <h2 class="underline">My Role</h2>
+                    <h2 class="underline" id="myroletools">My Role</h2>
                     <ul>
                         <li>UI Designer</li>
                         <li>UX Designer</li>
@@ -62,91 +95,111 @@
                         <li>Balsamiq</li>
                     </ul>
                 </div>
-                    <h2 class="underline">User Flows</h2>
+            <div class="row">   
+                <div class="col-md-6 col-lg-5">
+                <h2 class="underline" id="userflows">User Flows</h2>
                     <p>User flows are based off of the following user stories:</p>
                     <ol>
                         <li>As a new customer, I want to access the inventory without having to register, so that I can make sure this store has what I’m looking for before having to create an account.</li>
                         <li>As a customer, I want to be able to place multiple items in a shopping cart, so that I can purchase more than one item at a time.</li>
                         <li>As a returning customer, I want to be able to save items that I cannot buy to a wish list, so that I can purchase them at a later date.</li>
                     </ol>
-                    <div>
+                </div>
+                    <div class="col-md-6 col-lg-7">
                         <picture>
                             <source srcset="img/recycle/userflow@2x.png" media="(min-width:465px)">
                             <img src="img/recycle/userflow@1x.png" alt="User Flow Diagram" >
                         </picture>
                     </div>
-                    <h2 class="underline">Wireframes (low-fidelity)</h2>
+            </div>
+                    <h2 class="underline" id="lowmidwireframe">Wireframes (low-fidelity)</h2>
                     <p>I started sketching some wireframes based off of the user flows, starting with the loading screen, home page, process of searching for a product, adding items to the wishlist, and a checkout popup.</p>
-                    <div>
-                        <picture>
-                            <source srcset="img/recycle/wireframes_low-fid@2x.png" media="(min-width:465px)">
+                        <picture class="center-image">
+                            <source srcset="img/recycle/wireframes_low-fid@3x.png" media="(min-width:465px)">
                             <img src="img/recycle/wireframes_low-fid@1x.png" alt="Low-fidelity Wireframes" >
                         </picture>
-                    </div>
                     <h2 class="underline">Wireframes (mid-fidelity)</h2>
                     <p>I started sketching some wireframes based off of the user flows, starting with the loading screen, home page, process of searching for a product, adding items to the wishlist, and a checkout popup.</p>
                     <div>
-                        <picture>
-                            <source srcset="img/recycle/wireframes_mid-fid@2x.png" media="(min-width:465px)">
+                        <picture class="center-image"> 
+                            <source srcset="img/recycle/wireframes_mid-fid@3x.png" media="(min-width:465px)">
                             <img src="img/recycle/wireframes_mid-fid@1x.png" alt="Mid-fidelity Wireframes" >
                         </picture>
                     </div>
-                    <h2 class="underline">User Testing (Usability)</h2>
+                    <h2 class="underline" id="userabilitytest">User Testing (Usability)</h2>
                     <p>The goal of this test is to assess if new users can successfully complete their scenario while interacting with the mobile application for the first time. I would like to observe and measure if new users understand the project, its value, and how to complete basic initial functions such as searching for a product, adding a product to a wishlist and shopping cart.</p>
                     <p><u>Scenario:</u>You are a new user, and would like to search for some "handlebars" and browse the inventory available. After you reach the search results, you would like to save the 2nd and 3rd items to your wishlist. After reviewing your wishlist, you would like to add both items to your cart and check out.</p>
-                    <a href="https://share.vidyard.com/watch/8tQfNGoh7Druo7PgAggYoM?" target="_blank" class="button">Prototype Demo</a>
+                    <a href="https://share.vidyard.com/watch/8tQfNGoh7Druo7PgAggYoM?" target="_blank" class="button fixed">Prototype Demo</a>
                     <h2 class="underline">Feedback Analysis</h2>
-                    <div>
-                        <picture>
-                            <source srcset="img/recycle/feedback_analysis@2x.png" media="(min-width:465px)">
-                            <img src="img/recycle/feedback_analysis@1x.png" alt="Feedback Analysis Chart">
-                        </picture>
+                    <div style="overflow-x:auto;">
+                        <table>
+                            <tr>
+                              <th>Pain Points</th>
+                              <th>Priority</th>
+                              <th>Solutions</th>
+                            </tr>
+                            <tr>
+                              <td>Was unclear if items in wishlist were added to the shopping cart or not</td>
+                              <td>Critical</td>
+                              <td>Added a number indicator to the shopping cart icon when item is added to cart, and/or change the button to say "added to cart"</td>
+                            </tr>
+                            <tr>
+                              <td>Click on "checkout" but nothing happened</td>
+                              <td>Critical</td>
+                              <td>Make additional screens so users can see the checkout process, make a shopping cart page</td>
+                            </tr>
+                            <tr>
+                              <td>"Save your search" can be confusing with "wishlist"</td>
+                              <td>Preferential</td>
+                              <td>Consider differentiating the colors and between the two, maybe take out the heart icon next to "save your search</td>
+                            </tr>
+                        </table>
                     </div>
-                    <h2 class="underline">Wireframes (high-fidelity)</h2>
+                    <h2 class="underline" id="highwireframe">Wireframes (high-fidelity)</h2>
                     <p>After analyzing my user testing results, I considered the possible solutions to the pain points and edited my high-fidelity wireframes accordingly. I included a number indicator for the shopping cart when an item is added.  I created additional screens including a log in screen, an additional pop-up shopping cart on the search results page, and a shopping cart page. I also removed the heart icon for “save your search” and also included a Saved Searches tab within the page with the wishlist items.</p>
                     <div>
-                        <picture>
-                            <source srcset="img/recycle/wireframes_high-fid@2x.png" media="(min-width:465px)">
+                        <picture class="center-image">
+                            <source srcset="img/recycle/wireframes_high-fid@3x.png" media="(min-width:465px)">
                             <img src="img/recycle/wireframes_high-fid@1x.png" alt="High-fidelity Wireframes">
                         </picture>
                     </div>
-                    <h2 class="underline">Final UI Design</h2>
+                    <h2 class="underline" id="finalui">Final UI Design</h2>
                     <div>
-                        <picture>
-                            <source srcset="img/recycle/final_ui_1@2x.png" media="(min-width:465px)">
+                        <picture class="center-image">
+                            <source srcset="img/recycle/final_ui_1@3x.png" media="(min-width:465px)">
                             <img src="img/recycle/final_ui_1@1x.png" alt="Final UI Design 1">
                         </picture>
-                        <picture>
-                            <source srcset="img/recycle/final_ui_2@2x.png" media="(min-width:465px)">
+                        <picture class="center-image">
+                            <source srcset="img/recycle/final_ui_2@3x.png" media="(min-width:465px)">
                             <img src="img/recycle/final_ui_2@1x.png" alt="Final UI Design 2">
                         </picture>
-                        <picture>
-                            <source srcset="img/recycle/final_ui_3@2x.png" media="(min-width:465px)">
+                        <picture class="center-image"> 
+                            <source srcset="img/recycle/final_ui_3@3x.png" media="(min-width:465px)">
                             <img src="img/recycle/final_ui_3@1x.png" alt="Final UI Design 3">
                         </picture>
                     </div>
-                    <h2 class="underline">Responsive Design</h2>
+                    <h2 class="underline" id="responsivedesign">Responsive Design</h2>
                     <div>
-                        <picture>
+                        <picture class="center-image">
                             <source srcset="img/recycle/mockup_responsive@2x.png" media="(min-width:465px)">
                             <img src="img/recycle/mockup_responsive@1.5x.png" alt="Responsive Mockup">
                         </picture>
-                        <picture>
+                        <picture class="center-image">
                             <source srcset="img/recycle/mockup_mobile@2x.png" media="(min-width:465px)">
                             <img src="img/recycle/mockup_mobile@1x.png" alt="Mobile Mockup">
                         </picture>
-                        <picture>
+                        <picture class="center-image">
                             <source srcset="img/recycle/mockup_tablet@2x.png" media="(min-width:465px)">
                             <img src="img/recycle/mockup_tablet@1x.png" alt="Tablet Mockup" >
                         </picture>
-                        <picture>
+                        <picture class="center-image">
                             <source srcset="img/recycle/mockup_desktop@1x.png" media="(min-width:465px)">
                             <img src="img/recycle/mockup_desktop@1x.png" alt="Desktop Mockup">
                         </picture>
                     </div>
-                    <h2 class="underline">Challenges</h2>
+                    <h2 class="underline" id="challengetakeaways">Challenges</h2>
                     <p>One of the challenges of creating reCYCLE is how to differentiate us from other competitors. I spent a lot of time defining the branding guidelines to set ourselves apart. Also following the client’s needs, my designs needed to be modern and clean while providing the users with an easy online shopping experience. I used simple layouts and designs while providing useful features like saving an item to a wishlist, filtering and sorting search results, saving a search, etc.</p>
-                    <a href="https://www.figma.com/proto/qdhKutTAv4korIXj3msahq/5.-reCYCLE---Bike-e-commerce-App?page-id=6%3A647&node-id=6%3A648&viewport=-3949%2C404%2C0.25&scaling=contain&starting-point-node-id=6%3A648" target="_blank" class="button">Branding Guidelines</a>
+                    <a href="https://www.figma.com/proto/qdhKutTAv4korIXj3msahq/5.-reCYCLE---Bike-e-commerce-App?page-id=6%3A647&node-id=6%3A648&viewport=-3949%2C404%2C0.25&scaling=contain&starting-point-node-id=6%3A648" target="_blank" class="button fixed">Branding Guidelines</a>
                     <h2 class="underline">Takeaways</h2>
                     <p>I was not very familiar with bike parts and gear prior to this project. So I spent some more time researching and consulting friends that goes cycling on the regular.  Throughout this project, I learned:</p>
                     <ul>
@@ -169,7 +222,7 @@
         <h1>Get in Touch</h1>
         <p>If you like my work, feel free to connect with me via email, LinkedIn, Behance or Dribbble.</p>
         <div>
-            <a href="mailto:szupengjudysun@gmail.com" class="button contact">Send Email</a>
+            <a href="mailto:szupengjudysun@gmail.com" class="button fixed">Send Email</a>
         </div>
         <div class="social-media"> 
             <ul>
