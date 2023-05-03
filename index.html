@@ -13,17 +13,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Arapey&family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css-master/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/5dc2c8695c.js" crossorigin="anonymous"></script>
 </head>
 <body id="index-page">
 <header>
     <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
         <a href="index.html"><img src="img/logo.svg" alt="Szu Peng Judy Sun" class="logo"></a>
         <nav><ul>
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
             </ul>
         </nav>
+        </div>
     </div>
 </header>
 <main>
@@ -127,7 +131,11 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
-    </script>
+</script>
+<script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
