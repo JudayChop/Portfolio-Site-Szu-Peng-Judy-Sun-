@@ -414,6 +414,8 @@ td, th {
     nav > ul {
         margin: 1em 0;
     }
+    .navtoggle.responsive li  {
+    border-top: none;
 }
 
 
