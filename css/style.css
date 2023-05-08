@@ -60,7 +60,7 @@ header {
   background-color: #fefefe;
 }
 .about-image {
-  background-image: url(../img/hero_image_about.gif);
+  background-image: url(../img/hero_image_a.gif);
   height: 100%;
   max-width: 100%;
   background-position: center;
@@ -80,7 +80,7 @@ header {
   display: block;
 }
 .hero-image {
-  background-image: url(../img/hero_image_home.gif);
+  background-image: url(../img/hero_image_h.gif);
   height: 100%;
   max-width: 100%;
   background-position: center;
@@ -145,7 +145,7 @@ header {
 }
 /* Layout styling */
 .container {
-  padding: 0 15px 50px 15px;
+  padding: 0 15px 30px 15px;
 }
 .row {
   margin: 25px 0;
@@ -155,7 +155,8 @@ header {
   border-bottom: 1px solid #4a4a4a;
 }
 #about {
-  padding: 70px 0;
+  padding-bottom: 70px;
+  padding-top: 30px;
 }
 .center {
   text-align: center;
@@ -212,9 +213,6 @@ nav {
 }
 .my-picture {
   margin-bottom: 20px;
-}
-.indent {
-  text-indent: 30px;
 }
 .list {
   display: inline-block;
@@ -334,6 +332,10 @@ th {
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
+.social-media > p {
+  margin-top: 70px;
+  margin-bottom: 0;
+}
 
 /* Media Queries */
 @media only screen and (min-width: 360px) {
@@ -423,32 +425,47 @@ th {
   .navtoggle.responsive li {
     border-top: none;
   }
+  header > .container {
+    padding-bottom: 0;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .container {
     max-width: 1200px;
-    margin: 50px 100px 50px 100px;
+    margin-left:auto;
+    margin-right: auto;
   }
   #hero h1 {
     font-size: 3.5em;
   }
   h2 {
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
   h3 {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
   p {
-    font-size: 1.1em;
+    font-size: 1.3em;
   }
   #hero p {
-    font-size: 1.4em;
+    font-size: 1.6em;
   }
   #hero {
     text-align: center;
   }
   .hero-image {
+    max-width: 2500px;
     padding-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-image {
+    max-width: 2500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button {
+    font-size: 24px;
   }
 }
