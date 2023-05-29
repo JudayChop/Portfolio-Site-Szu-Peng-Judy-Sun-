@@ -372,6 +372,9 @@ th, td {
     display: block;
     transition: opacity .2s;
   }
+  .dropdown-content > ul > li:hover {
+    background-color: lightgray;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -417,9 +420,6 @@ th, td {
 }
 .dropdown-content li {
   padding:15px;
-}
-.dropdown-content li:hover {
-  background-color: lightgray;
 }
 .dropdown-content a {
   text-decoration: none;
@@ -513,6 +513,9 @@ th, td {
     overflow: hidden;
     background-color: #fefefe;
   }
+  .dropdown-content > ul > li:hover {
+    background-color: lightgray;
+  }
   .sidebar li {
     float: left;
     list-style-type: none;
@@ -522,9 +525,6 @@ th, td {
     display: block;
     text-decoration: none;
     color:#454141;
-  }
-  .sidebar {
-    
   }
 
 }
